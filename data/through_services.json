@@ -1,0 +1,88 @@
+[
+  {
+    "stationIdA": "HK10",
+    "companyA": "南陽電鉄", "lineA": "白馬線",
+    "stationIdB": "NY10",
+    "companyB": "南陽電鉄", "lineB": "南陽本線",
+    "directionFromA": "Down",
+    "departureDirection": "Down",
+    "types": ["普通", "快速"]
+  },
+  {
+    "stationIdA": "NY10",
+    "companyA": "南陽電鉄", "lineA": "南陽本線",
+    "stationIdB": "HK10",
+    "companyB": "南陽電鉄", "lineB": "白馬線",
+    "directionFromA": "Up",
+    "departureDirection": "Up",
+    "types": ["普通", "快速"]
+  },
+  {
+    "stationIdA": "HK16",
+    "companyA": "南陽電鉄", "lineA": "白馬線",
+    "stationIdB": "H16",
+    "companyB": "鯖鉄道", "lineB": "白馬線",
+    "directionFromA": "Up",
+    "types": ["普通", "快速"]
+  },
+  {
+    "stationIdA": "H16",
+    "companyA": "鯖鉄道", "lineA": "白馬線",
+    "stationIdB": "HK16",
+    "companyB": "南陽電鉄", "lineB": "白馬線",
+    "directionFromA": "Down",
+    "types": ["普通", "快速"]
+  },
+  {
+    "stationIdA": "IH02",
+    "companyA": "稲急", "lineA": "稲急白馬線",
+    "stationIdB": "IK02",
+    "companyB": "稲急", "lineB": "稲急本線",
+    "directionFromA": "Up",
+    "types": ["普通", "急行"]
+  },
+  {
+    "stationIdA": "IK02",
+    "companyA": "稲急", "lineA": "稲急本線",
+    "stationIdB": "IH02",
+    "companyB": "稲急", "lineB": "稲急白馬線",
+    "directionFromA": "Down",
+    "types": ["普通", "急行"]
+  },
+  {
+    "stationIdA": "NY18",
+    "companyA": "南陽電鉄", "lineA": "南陽本線",
+    "stationIdB": "IZ24",
+    "companyB": "南陽電鉄", "lineB": "和泉線",
+    "directionFromA": "Up",
+    "departureDirection": "Up",
+    "types": ["普通", "快速", "特急"]
+  },
+  {
+    "stationIdA": "IZ24",
+    "companyA": "南陽電鉄", "lineA": "和泉線",
+    "stationIdB": "NY18",
+    "companyB": "南陽電鉄", "lineB": "南陽本線",
+    "directionFromA": "Down",
+    "departureDirection": "Down",
+    "types": ["普通", "快速", "特急"]
+  },
+  {
+    "stationIdA": "W01",
+    "companyA": "鯖鉄道", "lineA": "東西線(西)",
+    "stationIdB": "E01",
+    "companyB": "鯖鉄道", "lineB": "東西線(東)",
+    "directionFromA": "Up",
+    "departureDirection": "Up",
+    "types": ["準急"]
+  },
+  {
+    "stationIdA": "E01",
+    "companyA": "鯖鉄道", "lineA": "東西線(東)",
+    "stationIdB": "W01",
+    "companyB": "鯖鉄道", "lineB": "東西線(西)",
+    "directionFromA": "Down",
+    "departureDirection": "Down",
+    "types": ["準急"]
+  }
+]

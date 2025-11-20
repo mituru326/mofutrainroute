@@ -1,0 +1,211 @@
+/* === ベーススタイル === */
+body {
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #f7faff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  
+  /* フッター最下部固定 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+/* === メインコンテンツ === */
+main {
+  flex: 1; /* 余白を自動埋め */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3rem; /* フッターとの余白 */
+}
+
+/* === ヘッダー === */
+header {
+  background: #4a7ab3; /* テーマカラー（ソフトブルー） */
+  color: white;
+  padding: 1.2rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* === 検索エリア === */
+#searchBox {
+  margin: 2rem auto;
+  padding: 2rem;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box; /* padding込みの幅計算 */
+  text-align: left;
+}
+
+/* ラベル */
+#searchBox label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* 入力フィールド */
+#searchBox input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* 検索ボタン */
+button#searchBtn {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3b82f6; /* アクセントカラー */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button#searchBtn:hover {
+  background-color: #2563eb;
+}
+
+/* 検索ボタン（無効時） */
+button#searchBtn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+/* === 結果表示エリア === */
+#resultArea {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* 候補リスト */
+.route-candidate {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.route-candidate:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.route-candidate h3 {
+  margin-top: 0;
+  color: #4a7ab3;
+}
+
+
+/* === 対応路線エリア === */
+#supportedLines {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.6;
+}
+
+#supportedLines h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+#supportedLines h3 {
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #4a7ab3; /* ヘッダー色と統一 */
+}
+
+#supportedLines ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#supportedLines li {
+  margin-bottom: 0.25rem;
+}
+
+#supportedLines .note {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* === フッター === */
+footer {
+  width: 100%;
+  background: #f9f9f9;
+  color: #555;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* リンクボタン */
+.footer-link-button {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #e8f0f8;
+  color: #4a7ab3;
+  border: 1px solid #cce0f0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.footer-link-button:hover {
+  background-color: #dbe7f3;
+  border-color: #aaccdd;
+  cursor: pointer;
+}
+
+/* コピーライト */
+footer small {
+  display: block;
+  color: #888;
+}
